@@ -1,0 +1,83 @@
+__Author__ : Projit Bandyopadhyay
+__Title__ : Linkhoarding + Category TODOs
+
+Categories:
+- Misc
+- Math
+- CS Theory
+- Cool Programming Stuff
+- Animation
+- Computer Vision
+- Torch
+- Theorem Proving
+
+
+--- Misc --- 
+Acing the interview java awesome
+- [X] https://aphyr.com/posts/341-hexing-the-technical-interview [fun read java]
+- [X] https://aphyr.com/posts/342-typing-the-technical-interview [fun read haskell types]
+
+--- Math ---
+Links:
+- https://www.cs.le.ac.uk/people/ah83/grobner/ [Term Rewriting Algebra]
+- https://www.youtube.com/watch?v=VdLhQs_y_E8&list=PLelIK3uylPMGzHBuR3hLMHrYfMqWWsmx5
+  [LA + Ring theory] 
+
+
+--- General CS ---
+Turing Lecture: https://www.youtube.com/watch?v=VsnQf7exv5I
+
+
+--- Programming ---
+- https://gcc.gnu.org/onlinedocs/gcc/Static-Analyzer-Options.html [fanalyzer
+  flag in gcc]
+- http://raganwald.com/2020/05/03/fractran.html [Minsky Machines]
+- https://lewissbaker.github.io/2020/05/11/understanding_symmetric_transfer
+  [C++ Coroutines]
+
+
+--- Animation ---
+Links: 
+
+*** Browser JS Animation Cutesy
+- Link: https://github.com/bollu/mathemagic/blob/master/index.html
+- Some code
+    var gen = RENDERER();    
+    document.body.onload = function() {
+        const container = document.getElementById("container");
+        
+        function write_to_container(v) {
+            console.log("write_to_container (" + v.value + ")");
+            container.firstChild.remove();
+            container.appendChild(v.value);
+            gen.next().then(write_to_container);
+        };
+        
+        gen.next().then(function(v) { 
+            container.appendChild(v.value);
+            gen.next().then(write_to_container);
+        });
+    };
+
+
+--- Computer Vision ---
+Links:
+- http://theorangeduck.com/page/deep-learning-framework-character-motion-synthesis-and-editing [character motion]
+- https://www.youtube.com/watch?v=vppFvq2quQ0 [siggraph paper video on deepmimic motion prediction]
+
+--- Torch ---
+Links:
+- https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html
+- https://github.com/pytorch/examples/tree/master/dcgan
+- https://github.com/pytorch/examples/tree/master/word_language_model
+- https://pytorch.org/docs/stable/autograd.html#function
+
+
+--- Theorem Proving
+
+- http://wwwf.imperial.ac.uk/~buzzard/xena/natural_number_game/ [Natural Number Game using Lean[]
+- https://softwarefoundations.cis.upenn.edu/lf-current/toc.html [Textbook for coq]
+
+
+*** Vim Plugin
+[coqtail] for vim
