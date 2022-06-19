@@ -2,30 +2,93 @@ __Author__ : Projit Bandyopadhyay
 __Title__ : Linkhoarding + Category TODOs
 
 Categories:
+- Explore
+- History
 - Misc
 - Math
-- CS Theory
-- Cool Programming Stuff
+- General CS
+- Programming
 - Animation
 - Computer Vision
+- Graphics
 - Torch
 - Theorem Proving
+- Physics
+- Reinforcement Learning
+- Linux
+- Robotics
+- If Time permits
+- Tools
+- CTF
+- MT
+- Rust
+- Haskell
+- Reading
+- Containers
+- Music Theory
+- Economics
+- Engineering
+- Fiction
+
+
+
+--- Explore? ---
+- Conway's knot proof [2020]
+- Relation between quantum entanglement + halting problem [2020]
+
+--- History ---
+*** Research to read about
+- knuth, erickson
+- Xerox
+- djikstra
 
 
 --- Misc --- 
 Acing the interview java awesome
 - [X] https://aphyr.com/posts/341-hexing-the-technical-interview [fun read java]
 - [X] https://aphyr.com/posts/342-typing-the-technical-interview [fun read haskell types]
+- [ ] Unabomber Manifesto misc/kaczynski2.pdf 
 
 --- Math ---
 Links:
 - https://www.cs.le.ac.uk/people/ah83/grobner/ [Term Rewriting Algebra]
 - https://www.youtube.com/watch?v=VdLhQs_y_E8&list=PLelIK3uylPMGzHBuR3hLMHrYfMqWWsmx5
   [LA + Ring theory] 
+- https://venhance.github.io/napkin/Napkin.pdf [Introduction to higher math]
+- mAthologer youtube
+- Q.E.D: Beauty in Mathematical Proof
+- Steven Strogatz: infinite powers
+
+*** Abstract Algebra
+Books: 
+- The design of everyday things
+- Artin  [dummit and foote if you want harder problems]
+
+*** Group Theory
+- http://libgen.li/item/index.php?md5=D1BDC4150ADAFB8BBEA0B0AB637FA2B1 [Visual
+  group theory]
+
+*** Complex Numbers
+- https://www.maa.org/press/maa-reviews/visual-complex-analysis [visual complex analysis]
+
+
+*** Automatic Differentiation and RAD (reverse)
+TODO # from the pytorch tutorial
 
 
 --- General CS ---
 Turing Lecture: https://www.youtube.com/watch?v=VsnQf7exv5I
+*** Algorithms
+- http://jeffe.cs.illinois.edu/teaching/algorithms/?fbclid=IwAR1hep31ptTVwmbsWpnrOOUvMGGgB5QxRGefgtnt72Vkadlj5I92rYDmGWg
+  [good algo textbook]
+- books/algorithms/clrs.pdf [CLRS]
+- https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-design-and-analysis-of-algorithms-spring-2015/index.htm [Design of algorithms MIT open courseware]
+
+*** PAC Learning
+- Probably Approximately Correct - Valiant :: some information on evolutions
+  connection with this
+
+- Reed Solomon Codes
 
 
 --- Programming ---
@@ -34,6 +97,9 @@ Turing Lecture: https://www.youtube.com/watch?v=VsnQf7exv5I
 - http://raganwald.com/2020/05/03/fractran.html [Minsky Machines]
 - https://lewissbaker.github.io/2020/05/11/understanding_symmetric_transfer
   [C++ Coroutines]
+- books/cp/Programming__Principles_and_Practice_Using C++ (Cpp Cplusplus).pdf [Original C++ book]
+- https://www.youtube.com/watch?v=w0sz5WbS5AM - compilers cpp matt godbolt
+
 
 
 --- Animation ---
@@ -59,11 +125,34 @@ Links:
         });
     };
 
+*** Use observablehq to mimic human motion?
+*** http://cliffle.com/blog/bare-metal-wasm/  // rust wasm
+*** Canvas api:
+https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/
+*** rust wasm interface: https://github.com/yewstack/yew
+
+*** GO through all of these pixar:
+https://graphics.pixar.com/library/
+*** pixar animation paper: 
+https://graphics.pixar.com/library/DynamicDeformablesSiggraph2020/paper.pdf
+
+
 
 --- Computer Vision ---
 Links:
 - http://theorangeduck.com/page/deep-learning-framework-character-motion-synthesis-and-editing [character motion]
 - https://www.youtube.com/watch?v=vppFvq2quQ0 [siggraph paper video on deepmimic motion prediction]
+
+
+--- Graphics ---
+- Ames Window Illusion
+*** Books
+- http://www.pbr-book.org/ [Physically Based Rendering From Theory to
+  Implementation]
+*** Courses
+- http://cs248.stanford.edu/winter20/ [stanford graphics course]
+
+- Marching squares: https://www.youtube.com/watch?v=M3iI2l0ltbE
 
 --- Torch ---
 Links:
@@ -72,8 +161,12 @@ Links:
 - https://github.com/pytorch/examples/tree/master/word_language_model
 - https://pytorch.org/docs/stable/autograd.html#function
 
+Books:
+- http://incompleteideas.net/book/RLbook2018.pdf
+- https://sites.ualberta.ca/~szepesva/papers/RLAlgsInMDPs.pdf
 
---- Theorem Proving
+
+--- Theorem Proving ---
 
 - http://wwwf.imperial.ac.uk/~buzzard/xena/natural_number_game/ [Natural Number Game using Lean[]
 - https://softwarefoundations.cis.upenn.edu/lf-current/toc.html [Textbook for coq]
@@ -81,3 +174,106 @@ Links:
 
 *** Vim Plugin
 [coqtail] for vim
+
+
+--- Physics ---
+- Einstein lectures relativity: https://www.gutenberg.org/files/36276/36276-pdf.pdf
+- books/qm/Griffiths - Introduction to quantum mechanics.pdf [great book on qm]
+- https://libgen.is/book/index.php?md5=B6D5DD8E5A8D56A2B15DBC4E5BA6ECD4 [ it's called "Abel's theorem in Problems and Solutions". He proves that we can't express the solution to a general 5th degree polynomial in terms of +, -, *, /, nth roots [Abel's theorem]. He starts assuming nothing (not groups, not riemann surfaces, not complex numbers). He assumes you know what a polynomial is. ]
+
+--- Reinforcement Learning ---
+*** Papers To Read (don't remember where I got them from)
+- rein_learn_papers/ApproximatelyOptimalApproximateReinforcementLearning.pdf
+- rein_learn_papers/DeepReinforcementLearningWithDoubleQLearning.pdf
+- rein_learn_papers/DeterministicPolicyGradientAlgorithms.pdf
+- rein_learn_papers/HumanLevelControlThroughDeepReinforcementLearning.pdf
+- rein_learn_papers/PlayingAtari.pdf
+- rein_learn_papers/TrustRegionPolicyOpt.pdf
+
+--- Linux ---
+*** Books
+- books/linux/Design of the Unix Operating System By Maurice Bach.pdf [Unix Operating System Boo]
+- books/linux/UnderstandingTheLinuxKernel3rdEdition.pdf [linux kernel book]
+
+
+--- Robotics ---
+books/robotics/Trajectory_Planning_for_Automatic_Machines_and_Robots.pdf
+
+
+--- If Time Permits ---
+*** Ameya paper contextual trees
+- https://arxiv.org/pdf/1807.06473.pdf
+- Corresponding youtube video: https://www.youtube.com/watch?v=n3Ul5kbwZv8
+
+
+--- Game Theory ---
+
+--- Tools ---
+- Tikz: Latex drawing tool
+- awwapp: draw on browser easily
+
+
+--- Shortcuts ---
+*** git
+finding diffs
+- git log -p (-1, -2 ..) <filename>
+- git diff HEAD^^ <filename>
+
+--- CTF ---
+- https://pwn.college/
+
+--- MT ---
+- Idea:
+    - fold out tree.
+        take 2 languages extremely basic. take final goal: english?
+        aim is to version and imrpove with grammatical structures to express the same amount of ideas as that of the final product. keep introducing new grammatical concepts, perhaps one on top of antoher. genetic algorithm kind of thing.
+
+--- Rust ---
+- passing closures to other closures
+
+--- Haskell --- 
+This is the standard "intro to haskell" course: https://www.seas.upenn.edu/~cis194/fall16/
+I feel since you know Coq, you might get more bang for buck by reading:
+1.  "functional pearls", a collection of papers that explain one idea really well, and by reading the books:
+2. 'Pearls of functional algorithm design' by Richard Bird
+3. 'Purely functional data structures' by Chris Okasaki: https://www.cs.cmu.edu/~rwh/theses/okasaki.pdf
+
+--- Reading ---
+Crime and Punishment
+
+
+--- Model Compression ---
+- https://drive.google.com/file/d/1FuXMcE1ozRGvH9IFaqaNRG3hz_mjSd1W/view
+
+--- Containers ---
+- great talk by redbeard on container construction https://www.youtube.com/watch?v=gMpldbcMHuI
+- https://ericchiang.github.io/post/containers-from-scratch/ - containers from scratch blog
+
+--- Music Theory ---
+- https://www.youtube.com/watch?v=Daw93bRHe4Y . Guitar correct tuning is off?
+
+
+--- CTF ---
+- https://pwn.college/
+- Read about hacking team exploit: https://pwn.college/modules/intro/phisher-hackback.txt
+- rappel: for syscall practice
+- https://www.intezer.com/blog/research/executable-linkable-format-101-part1-sections-segments/  -ELF related info
+
+
+--- Economics ---
+- Black Scholes Merton options pricing formula?
+
+--- Engineering
+- Compliant Mechanism
+
+
+--- Nature papers ---
+Math using AI
+- https://www.nature.com/articles/s41586-021-04086-x.pdf
+- https://arxiv.org/pdf/2111.15161.pdf
+- https://arxiv.org/pdf/2111.15323.pdf 
+
+
+--- Fiction ---
+- Remains of the day - kazuo ishiguro
+
