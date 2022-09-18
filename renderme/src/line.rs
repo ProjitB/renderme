@@ -1,9 +1,9 @@
 use image::{RgbImage, Rgb};
 
 #[derive(Copy, Clone)]
-pub struct Point {
-    pub x: i32,
-    pub y: i32,
+pub struct Point { // Screen Point
+    pub x: u32,
+    pub y: u32,
 }
 
 #[derive(Copy, Clone)]
@@ -13,7 +13,7 @@ pub struct Line {
 }
 
 impl Line {
-    pub fn draw_under_45_degrees<F: FnMut(u32, u32)>(x0: i32, x1: i32, y0: i32, y1: i32, dx: i32, dy: i32, mut imgput: F) {
+    pub fn draw_under_45_degrees<F: FnMut(u32, u32)>(x0: u32, x1: u32, y0: u32, y1: u32, dx: i32, dy: i32, mut imgput: F) {
         let (lx, ly, rx, ry) = if x0 > x1 { // Going left to right
             (x1, y1, x0, y0) } else {(x0, y0, x1, y1)};
         let mut y = ly; // compiler will anyway replace y with y0
@@ -32,8 +32,8 @@ impl Line {
     }
 
     pub fn draw(&self, img: &mut RgbImage, color: &[u8; 3]) {
-        let dx: i32 = (self.p0.x-self.p1.x).abs();
-        let dy: i32 = (self.p0.y-self.p1.y).abs();
+        let dx: i32 = (self.p0.x as i32 - self.p1.x as i32).abs();
+        let dy: i32 = (self.p0.y as i32 - self.p1.y as i32).abs();
         if dx > dy {
             Line::draw_under_45_degrees(self.p0.x, self.p1.x, self.p0.y, self.p1.y, dx, dy, |x: u32, y: u32| {img.put_pixel(x, y, Rgb(*color))});
         } else { // Swap stuff around so it's like a rotation
@@ -42,7 +42,7 @@ impl Line {
  
     }
 
-    pub fn new(x0: i32, y0: i32, x1: i32, y1: i32) -> Line {
+    pub fn new(x0: u32, y0: u32, x1: u32, y1: u32) -> Line {
         if x0 < x1 {
             Line {
                 p0: Point{x:x0, y:y0},
